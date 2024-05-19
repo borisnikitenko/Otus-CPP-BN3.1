@@ -58,7 +58,7 @@ int main(int argc, char** argv) {
 			return 0;
 		}
 		else {
-			std::cout << "Unknown parameter has been entered - quitting!" << std::endl;
+			std::cout << "Unknown parameter " << "'" << arg1_value << "'" << " has been entered - quitting!" << std::endl;
 			return -1;
 		}
 		}
@@ -75,12 +75,12 @@ int main(int argc, char** argv) {
 		  return 0;
 		}
 		else {
-			std::cout << "Wrong usage! Expect only these arguments and their values: -max (required val up to 100) or -level (required vals: 1,2 or 3) or -table (without values)" << std::endl;
+			std::cout << "Wrong usage! Expect only these arguments and their values: -max (required any int number) or -level (required vals: 1,2 or 3) or -table (without values)" << std::endl;
 			return -1;
 		}
 	}
 	else {
-		std::cout << "Wrong usage! Expect only these arguments and their values: -max (required val up to 100) or -level (required vals: 1,2 or 3) or -table (without values)" << std::endl;
+		std::cout << "Wrong usage! Expect only these arguments and their values: -max (required any int number) or -level (required vals: 1,2 or 3) or -table (without values)" << std::endl;
 		return -1;
 	}
 }
