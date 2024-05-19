@@ -30,6 +30,7 @@ int main(int argc, char** argv) {
 
 			// Here we need to pass this max value into check scores func, probably check the range (100 - max)
 			f_check_value(max_value);
+			return 0;
 		}
 		else if (arg1_value == "-level") {
 		//Here we need to run check value with level option 1,2,3, ensure only 1,2 or 3 values have been entered
@@ -54,6 +55,7 @@ int main(int argc, char** argv) {
 					break;
 				}
 			f_check_value(max_value);
+			return 0;
 		}
 		else {
 			std::cout << "Unknown parameter has been entered - quitting!" << std::endl;
@@ -69,8 +71,8 @@ int main(int argc, char** argv) {
 		std::string arg1_value{ argv[1] };
 		if (arg1_value == "-table") {
 		//just show the high scores table and quit the program
-			f_high_scores_r();
-		return 0;
+		  f_high_scores_r();
+		  return 0;
 		}
 		else {
 			std::cout << "Wrong usage! Expect only these arguments and their values: -max (required val up to 100) or -level (required vals: 1,2 or 3) or -table (without values)" << std::endl;
