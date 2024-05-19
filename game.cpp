@@ -63,6 +63,7 @@ int main(int argc, char** argv) {
 	else if (argc == 1) {
 	//Here we need to run check scores with default params - i.e. random value func result with 100 max, since no arguments have been entered
 		f_check_value(max_value);
+		return 0;
 	}
 	else if (argc == 2) {
 		std::string arg1_value{ argv[1] };
@@ -80,6 +81,5 @@ int main(int argc, char** argv) {
 		std::cout << "Wrong usage! Expect only these arguments and their values: -max (required val up to 100) or -level (required vals: 1,2 or 3) or -table (without values)" << std::endl;
 		return -1;
 	}
-	//return 0;
 }
 
