@@ -19,7 +19,7 @@ int f_check_value(int max_value) {
 	std::cin >> user_name;
 
 	//Ask for guess number  - current value
-	std::cout << "Enter your guess:" << std::endl;
+	std::cout << "Enter your guess: from 0 to " << max_value - 1 << std::endl;
 
 	do {
 		std::cin >> current_value;
